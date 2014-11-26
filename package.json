@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "tipsy",
   "private": true,
@@ -45,3 +46,52 @@
     "purecss": "^0.5.0"
   }
 }
+=======
+{
+  "name": "tipsy",
+  "private": true,
+  "scripts": {
+    "watch": "grunt default watch",
+    "watch-chrome": "grunt chrome-extension watch:chrome-extension",
+    "watch-firefox": "grunt firefox-extension watch:firefox-extension",
+    "build": "grunt",
+    "build-chrome": "grunt chrome-extension",
+    "build-firefox": "grunt firefox-extension",
+    "test": "grunt && grunt mochaTest && grunt shell:s3",
+    "test-chrome": "grunt mochaTest:chrome-extension",
+    "test-firefox": "grunt mochaTest:firefox-extension",
+    "postinstall": "npm dedupe && grunt mozilla-addon-sdk && npm run python2",
+    "python2": "grunt shell:python2"
+  },
+  "devDependencies": {
+    "es6-module-loader": "^0.9.4",
+    "es6-module-transpiler": "^0.9.5",
+    "firefox-profile": "^0.3.6",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compress": "^0.12.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.3",
+    "grunt-mozilla-addon-sdk": "^0.3.2",
+    "grunt-s3-sync": "^0.4.3",
+    "grunt-shell": "^1.1.1",
+    "grunt-targethtml": "^0.2.6",
+    "knox": "^0.9.1",
+    "mocha": "^2.0.1",
+    "promise": "^6.0.1",
+    "selenium-chromedriver": "^0.0.2",
+    "selenium-standalone": "^2.44.0-1",
+    "selenium-webdriver": "^2.44.0"
+  },
+  "dependencies": {
+    "combyne": "^0.6.2",
+    "jquery": "^2.1.1",
+    "moment": "^2.8.3",
+    "purecss": "^0.5.0"
+  }
+}
+>>>>>>> 71f4539d03af0720982fc8be5b3efbc06be88469
