@@ -3,6 +3,7 @@
 import Component from '../../component';
 import { select, selectAll } from '../../dom';
 import DonationGoalComponent from '../../components/donation-goal/donation-goal';
+import ThresholdGoalComponent from '../../components/threshold-goal/threshold-goal';
 import RemindersComponent from '../../components/reminders/reminders';
 
 function SettingsPage() {
@@ -22,6 +23,7 @@ SettingsPage.prototype = {
 
   afterRender: function() {
     new DonationGoalComponent(select('set-donation-goal', this.el)).render();
+    new ThresholdGoalComponent(select('set-threshold-goal', this.el)).render();
     new RemindersComponent(select('set-reminders', this.el)).render();
   }
 };
